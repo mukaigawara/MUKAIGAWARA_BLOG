@@ -14,7 +14,7 @@ hero:
     #   text: API Examples
     #   link: /api-examples
   image:
-    src: /images/LOGO.jpg
+    src: ./images/LOGO.jpg
     alt: logo
 # features:
 #   - title: Feature A
@@ -24,6 +24,8 @@ hero:
 #   - title: Feature C
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
+
+## Webエンジニアをしています。
 
 <style>
 :root {
