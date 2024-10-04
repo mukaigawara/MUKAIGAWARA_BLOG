@@ -8,6 +8,9 @@ export default defineConfig({
   lastUpdated: true,
   // cleanUrls: true,
   // metaChunk: true,
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+  ],
   themeConfig: {
     search: {
       provider: "local",
