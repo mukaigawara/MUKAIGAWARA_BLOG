@@ -2,12 +2,12 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/MUKAIGAWARA_BLOG/",
+  base: "/MUKAIGAWARA_BLOG/docs/",
   title: "MUKAIGAWARA Blog",
   description: "For VitePress Site",
   lastUpdated: true,
-  cleanUrls: true,
-  metaChunk: true,
+  // cleanUrls: true,
+  // metaChunk: true,
   themeConfig: {
     search: {
       provider: "local",
