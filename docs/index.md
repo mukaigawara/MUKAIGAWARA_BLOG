@@ -14,7 +14,7 @@ hero:
     #   text: API Examples
     #   link: /api-examples
   image:
-    src: ./test/images/LOGO.jpg
+    src: /public/images/LOGO.jpg
     alt: logo
 
 features:
