@@ -8,25 +8,22 @@ hero:
   tagline: 向川原 悠貴 のブログです。
   actions:
     - theme: brand
-      text: テスト記事を見る
-      link: /test
+      text: 記事を見る
+      link: /blogs
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
   image:
     src: /public/images/LOGO.jpg
     alt: logo
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+# features:
+#   - title: Feature A
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature B
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - title: Feature C
+#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
-<!-- TODO: 画像を円形にする方法を調べる -->
 
 <style>
 :root {
@@ -34,7 +31,7 @@ features:
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
 
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
-  --vp-home-hero-image-border-radius: 50%;
+  /* --vp-home-hero-image-border-radius: 50%; TODO: 画像を円形にする方法を調べる */
   --vp-home-hero-image-filter: blur(44px);
 }
 

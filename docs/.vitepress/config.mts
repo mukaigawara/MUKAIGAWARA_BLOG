@@ -15,52 +15,44 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Examples", link: "/examples" },
-      { text: "Tests", link: "/test" },
+      // { text: "Examples", link: "/examples" },
+      { text: "Blogs", link: "/blogs" },
     ],
     sidebar: {
-      test: [
+      "/blogs/": [
         {
-          text: "Guide",
+          text: "Blogs",
           items: [
-            { text: "markdown", link: "/md-example/" },
-            { text: "api", link: "/api-example" },
+            {
+              text: "フロントエンド",
+              link: "/blogs/front-end",
+              items: [
+                {
+                  collapsed: true,
+                  text: "React",
+                  link: "/blogs/front-end/react/sample_1",
+                  items: [
+                    { text: "記事1", link: "/blogs/front-end/react/sample_1" },
+                    { text: "記事2", link: "/blogs/front-end/react/sample_2" },
+                    { text: "記事3", link: "/blogs/front-end/react/sample_3" },
+                  ],
+                },
+              ],
+            },
+            {
+              text: "Books",
+              link: "/blogs/books/index",
+              items: [
+                {
+                  collapsed: true,
+                  text: "XP",
+                  link: "/blogs/books/xp/index.md",
+                },
+              ],
+            },
           ],
         },
       ],
-
-      // This sidebar gets displayed when a user
-      // is on `guide` directory.
-      // "/test/": [
-      //   {
-      //     text: "/test/",
-      //     items: [
-      //       {
-      //         text: "Index",
-      //         link: "/guide/",
-      //         items: [
-      //           {
-      //             text: "Index",
-      //             link: "/guide/",
-      //             items: [
-      //               { text: "Index", link: "/guide/" },
-      //               { text: "One", link: "/guide/one" },
-      //               { text: "Two", link: "/guide/two" },
-      //             ],
-      //             collapsed: true,
-      //           },
-      //           { text: "One", link: "/guide/one" },
-      //           { text: "Two", link: "/guide/two" },
-      //         ],
-      //       },
-      //       { text: "One", link: "/guide/one" },
-      //       { text: "Two", link: "/guide/two" },
-      //     ],
-      //   },
-      // ],
-
-      // This sidebar gets displayed when a user
-      // is on `config` directory.
       "/examples/": [
         {
           text: "examples",
@@ -72,8 +64,6 @@ export default defineConfig({
       ],
     },
 
-    socialLinks: [
-      { icon: "github", link: "https://github.com/vuejs/vitepress" },
-    ],
+    socialLinks: [{ icon: "github", link: "https://github.com/mukaigawara" }],
   },
 });
