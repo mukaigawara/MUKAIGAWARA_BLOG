@@ -31,28 +31,44 @@ export default defineConfig({
               link: "/blogs/front-end",
               items: [
                 {
-                  collapsed: true,
+                  // collapsed: true,
                   text: "React",
                   link: "/blogs/front-end/react/sample_1",
                   items: [
-                    { text: "記事1", link: "/blogs/front-end/react/sample_1" },
-                    { text: "記事2", link: "/blogs/front-end/react/sample_2" },
-                    { text: "記事3", link: "/blogs/front-end/react/sample_3" },
+                    { text: "サンプル記事1", link: "/blogs/front-end/react/sample_1" },
+                    { text: "サンプル記事2", link: "/blogs/front-end/react/sample_2" },
+                    { text: "サンプル記事3", link: "/blogs/front-end/react/sample_3" },
+                  ],
+                },
+                {
+                  // collapsed: false,
+                  text: "テスト関連",
+                  // link: "/blogs/front-end/react/sample_1",
+                  items: [
+                    {
+                      // collapsed: false,
+                    text: "testing-library",
+                    // link: "/blogs/front-end/react/sample_1",
+                    items: [
+                      { text: "クエリについて", link: "/blogs/front-end/testings/testing-library/about-query" },
+                    ],
+                  },
                   ],
                 },
               ],
             },
-            {
-              text: "Books",
-              link: "/blogs/books/index",
-              items: [
-                {
-                  collapsed: true,
-                  text: "XP",
-                  link: "/blogs/books/xp/index.md",
-                },
-              ],
-            },
+            // TODO: 書いたら追加
+            // {
+            //   text: "Books",
+            //   link: "/blogs/books/index",
+            //   items: [
+            //     {
+            //       collapsed: true,
+            //       text: "XP",
+            //       link: "/blogs/books/xp/index.md",
+            //     },
+            //   ],
+            // },
           ],
         },
       ],
