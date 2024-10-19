@@ -26,5 +26,3 @@ hero:
 ---
 
 ## Web エンジニアをしています。
-
-<playground />
