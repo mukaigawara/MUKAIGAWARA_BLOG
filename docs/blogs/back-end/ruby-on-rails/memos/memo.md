@@ -34,3 +34,20 @@ result :
 | app/models/comment.rb | Comment モデル |
 | test/models/comment_test.rb | Comment モデルをテストするためのハーネス |
 | test/fixtures/comments.yml | テストで使うサンプルコメント |
+
+## 簡単に作れる BASIC 認証
+
+Controller ごとに BASIC 認証を作れる。
+Rails の `http_basic_authenticate_with` メソッドを使う
+
+```ruby
+class ArticlesController < ApplicationController
+  http_basic_authenticate_with name: "dhh", password: "secret", except: [:index, :show] # [!code highlight]
+
+  def index
+    @articles = Article.all
+  end
+
+  #（以下省略）
+end
+```
