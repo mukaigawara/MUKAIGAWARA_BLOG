@@ -25,7 +25,9 @@ hero:
 #     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-## Webエンジニアをしています。
+## Web エンジニアをしています。
+
+<playground />
 
 <style>
 :root {

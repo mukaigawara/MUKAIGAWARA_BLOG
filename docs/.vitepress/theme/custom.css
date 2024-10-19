@@ -1,0 +1,13 @@
+:root {
+  margin-top: 60px;
+  --c-brand: #8664ff;
+  --c-brand-light: #8974ff;
+}
+
+:root img {
+  border-radius: 45px;
+}
+
+.nav-bar {
+  background-color: var(--c-brand);
+}
