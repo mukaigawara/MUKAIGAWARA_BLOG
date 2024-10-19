@@ -8,7 +8,7 @@ hero:
   tagline: 向川原 悠貴 のブログです。
   actions:
     - theme: brand
-      text: 記事を見る
+      text: ブログを見る
       link: /blogs
   image:
     src: /LOGO.jpg
