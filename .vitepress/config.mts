@@ -21,7 +21,7 @@ const backendItem: DefaultTheme.SidebarItem = {
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/MUKAIGAWARA_Blog/",
+  base: "/MUKAIGAWARA_BlOG/",
   title: "MUKAIGAWARA Blog",
   description: "For VitePress Site",
   lastUpdated: true,
