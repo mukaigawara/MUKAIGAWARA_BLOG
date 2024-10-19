@@ -10,9 +10,6 @@ hero:
     - theme: brand
       text: 記事を見る
       link: /blogs
-    # - theme: alt
-    #   text: API Examples
-    #   link: /api-examples
   image:
     src: /LOGO.jpg
     alt: logo
