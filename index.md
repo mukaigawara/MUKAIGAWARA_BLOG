@@ -11,7 +11,7 @@ hero:
       text: ブログを見る
       link: /blogs
   image:
-    src: /LOGO.jpg
+    src: /LOGO2.png
     alt: logo
 # features:
 #   - title: Feature A

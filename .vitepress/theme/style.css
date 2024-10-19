@@ -91,7 +91,6 @@
  * -------------------------------------------------------------------------- */
 
 :root {
-  margin-top: 60px;
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
@@ -105,10 +104,7 @@
     #47caff 50%
   );
   --vp-home-hero-image-filter: blur(44px);
-}
-
-:root img {
-  border-radius: 50px;
+  --vp-home-hero-image-border-radius: 50px;
 }
 
 @media (min-width: 640px) {
