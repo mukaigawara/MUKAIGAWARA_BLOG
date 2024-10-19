@@ -1,4 +1,23 @@
-import { defineConfig } from "vitepress";
+import { type DefaultTheme, defineConfig } from "vitepress";
+
+const backendItem: DefaultTheme.SidebarItem = {
+  text: "バックエンド",
+  items: [
+    {
+      text: "Ruby on Rails",
+      items: [
+        {
+          text: "メモ",
+          link: "/blogs/back-end/ruby-on-rails/memos/memo.md",
+        },
+        {
+          text: "モデルの関連付け",
+          link: "/blogs/back-end/ruby-on-rails/memos/model-association.md",
+        },
+      ],
+    },
+  ],
+};
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -8,9 +27,10 @@ export default defineConfig({
   lastUpdated: true,
   // cleanUrls: true,
   // metaChunk: true,
-  head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
-  ],
+  markdown: {
+    lineNumbers: true,
+  },
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     search: {
       provider: "local",
@@ -18,7 +38,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      // { text: "Examples", link: "/examples" },
       { text: "Blogs", link: "/blogs" },
     ],
     sidebar: {
@@ -27,36 +46,35 @@ export default defineConfig({
           text: "Blogs",
           items: [
             {
+              collapsed: true,
               text: "フロントエンド",
-              link: "/blogs/front-end",
               items: [
                 {
-                  // collapsed: true,
                   text: "React",
-                  link: "/blogs/front-end/react/sample_1",
                   items: [
-                    { text: "サンプル記事1", link: "/blogs/front-end/react/sample_1" },
-                    { text: "サンプル記事2", link: "/blogs/front-end/react/sample_2" },
-                    { text: "サンプル記事3", link: "/blogs/front-end/react/sample_3" },
+                    {
+                      text: "サンプル記事1",
+                      link: "/blogs/front-end/react/sample_1",
+                    },
                   ],
                 },
                 {
-                  // collapsed: false,
                   text: "テスト関連",
-                  // link: "/blogs/front-end/react/sample_1",
                   items: [
                     {
-                      // collapsed: false,
-                    text: "testing-library",
-                    // link: "/blogs/front-end/react/sample_1",
-                    items: [
-                      { text: "クエリについて", link: "/blogs/front-end/testings/testing-library/about-query" },
-                    ],
-                  },
+                      text: "testing-library",
+                      items: [
+                        {
+                          text: "クエリについて",
+                          link: "/blogs/front-end/testings/testing-library/about-query",
+                        },
+                      ],
+                    },
                   ],
                 },
               ],
             },
+            backendItem,
             // TODO: 書いたら追加
             // {
             //   text: "Books",
