@@ -44,20 +44,22 @@ export default defineConfig({
       "/blogs/": [
         {
           text: "Blogs",
+          link: "/blogs/",
           items: [
             {
               collapsed: true,
               text: "フロントエンド",
               items: [
-                {
-                  text: "React",
-                  items: [
-                    {
-                      text: "サンプル記事1",
-                      link: "/blogs/front-end/react/sample_1",
-                    },
-                  ],
-                },
+                // TODO: 書いたら追加
+                // {
+                //   text: "React",
+                //   items: [
+                //     {
+                //       text: "サンプル記事1",
+                //       link: "/blogs/front-end/react/sample_1",
+                //     },
+                //   ],
+                // },
                 {
                   text: "テスト関連",
                   items: [
