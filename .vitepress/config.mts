@@ -8,11 +8,15 @@ const backendItem: DefaultTheme.SidebarItem = {
       items: [
         {
           text: "メモ",
-          link: "/blogs/back-end/ruby-on-rails/memos/memo.md",
+          link: "/blogs/back-end/ruby-on-rails/memo.md",
         },
         {
           text: "モデルの関連付け",
-          link: "/blogs/back-end/ruby-on-rails/memos/model-association.md",
+          link: "/blogs/back-end/ruby-on-rails/model-association.md",
+        },
+        {
+          text: "ActiveRecordの基礎",
+          link: "/blogs/back-end/ruby-on-rails/ActiveRecordの基礎.md",
         },
       ],
     },
