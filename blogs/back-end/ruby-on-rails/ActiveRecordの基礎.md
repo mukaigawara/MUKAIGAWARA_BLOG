@@ -1,8 +1,8 @@
 ---
-title: ActiveRecodeの基礎
+title: ActiveRecordの基礎
 ---
 
-# ActiveRecode の基礎 <Badge type="danger" text="WIP" />
+# ActiveRecord の基礎 <Badge type="danger" text="WIP" />
 
 ## AcitiveRecord について
 

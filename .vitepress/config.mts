@@ -1,6 +1,7 @@
 import { type DefaultTheme, defineConfig } from "vitepress";
 
 const backendItem: DefaultTheme.SidebarItem = {
+  collapsed: true,
   text: "バックエンド",
   items: [
     {
@@ -17,6 +18,45 @@ const backendItem: DefaultTheme.SidebarItem = {
         {
           text: "ActiveRecordの基礎",
           link: "/blogs/back-end/ruby-on-rails/ActiveRecordの基礎.md",
+        },
+      ],
+    },
+  ],
+};
+
+const frontEndItem: DefaultTheme.SidebarItem = {
+  collapsed: true,
+  text: "フロントエンド",
+  items: [
+    // TODO: 書いたら追加
+    // {
+    //   text: "React",
+    //   items: [
+    //     {
+    //       text: "サンプル記事1",
+    //       link: "/blogs/front-end/react/sample_1",
+    //     },
+    //   ],
+    // },
+    {
+      text: "リッチテキストエディタの内容のコピー",
+      link: "/blogs/front-end/リッチテキストエディタの内容のコピー",
+    },
+    {
+      text: "LexicalでComposerを使用せずLexicalEditorを使用する",
+      link: "/blogs/front-end/LexicalでComposerを使用せずLexicalEditorを使用する",
+    },
+    {
+      text: "テスト関連",
+      items: [
+        {
+          text: "testing-library",
+          items: [
+            {
+              text: "クエリについて",
+              link: "/blogs/front-end/testings/testing-library/about-query",
+            },
+          ],
         },
       ],
     },
@@ -50,37 +90,8 @@ export default defineConfig({
           text: "Blogs",
           link: "/blogs/",
           items: [
-            {
-              collapsed: true,
-              text: "フロントエンド",
-              items: [
-                // TODO: 書いたら追加
-                // {
-                //   text: "React",
-                //   items: [
-                //     {
-                //       text: "サンプル記事1",
-                //       link: "/blogs/front-end/react/sample_1",
-                //     },
-                //   ],
-                // },
-                {
-                  text: "テスト関連",
-                  items: [
-                    {
-                      text: "testing-library",
-                      items: [
-                        {
-                          text: "クエリについて",
-                          link: "/blogs/front-end/testings/testing-library/about-query",
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
             backendItem,
+            frontEndItem,
             // TODO: 書いたら追加
             // {
             //   text: "Books",
@@ -96,15 +107,15 @@ export default defineConfig({
           ],
         },
       ],
-      "/examples/": [
-        {
-          text: "examples",
-          items: [
-            { text: "markdown", link: "/examples/md-examples/" },
-            { text: "api", link: "/examples/api-examples" },
-          ],
-        },
-      ],
+      // "/examples/": [
+      //   {
+      //     text: "examples",
+      //     items: [
+      //       { text: "markdown", link: "/examples/md-examples/" },
+      //       { text: "api", link: "/examples/api-examples" },
+      //     ],
+      //   },
+      // ],
     },
 
     socialLinks: [{ icon: "github", link: "https://github.com/mukaigawara" }],
