@@ -67,7 +67,7 @@ const frontEndItem: DefaultTheme.SidebarItem = {
 export default defineConfig({
   base: "/MUKAIGAWARA_BLOG/",
   title: "MUKAIGAWARA Blog",
-  description: "For VitePress Site",
+  description: "頑張って学んだことをちまちま書いていくブログ",
   lastUpdated: true,
   // cleanUrls: true,
   // metaChunk: true,
