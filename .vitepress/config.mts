@@ -1,7 +1,28 @@
 import { type DefaultTheme, defineConfig } from "vitepress";
 
+const awsItem: DefaultTheme.SidebarItem = {
+  // collapsed: true,
+  text: "AWS",
+  items: [
+    {
+      text: "メモ",
+      link: "/blogs/aws/memo.md",
+      // items: [
+      //   {
+      //     text: "ECSの基本",
+      //     link: "/blogs/aws/ecs/ecsの基本.md",
+      //   },
+      //   {
+      //     text: "ECSの基本2",
+      //     link: "/blogs/aws/ecs/ecsの基本2.md",
+      //   },
+      // ],
+    },
+  ],
+};
+
 const backendItem: DefaultTheme.SidebarItem = {
-  collapsed: true,
+  // collapsed: true,
   text: "バックエンド",
   items: [
     {
@@ -25,7 +46,7 @@ const backendItem: DefaultTheme.SidebarItem = {
 };
 
 const frontEndItem: DefaultTheme.SidebarItem = {
-  collapsed: true,
+  // collapsed: true,
   text: "フロントエンド",
   items: [
     // TODO: 書いたら追加
@@ -90,6 +111,7 @@ export default defineConfig({
           text: "Blogs",
           link: "/blogs/",
           items: [
+            awsItem,
             backendItem,
             frontEndItem,
             // TODO: 書いたら追加
