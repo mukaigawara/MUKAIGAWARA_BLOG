@@ -51,3 +51,13 @@ class ArticlesController < ApplicationController
   #（以下省略）
 end
 ```
+
+## destroy_by が便利
+
+where + destroy_all を、素早くかける
+https://api.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-destroy_by
+
+```ruby
+# == FlowProcess.where(name: delete_flow_process_labels).destroy_all
+FlowProcess.destroy_by(flow_id: id, name: delete_flow_process_labels)
+```
